@@ -1,0 +1,46 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+    background: #44403c;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fb923c;
+}
+
+/* Transitions */
+.page-fade {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hide scrollbar for admin modal */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hover effects */
+.hover-scale {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-scale:hover {
+    transform: scale(1.02);
+}
