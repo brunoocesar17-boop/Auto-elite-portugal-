@@ -1,0 +1,8 @@
+{
+  "name": "AutoElite Portugal",
+  "description": "Plataforma premium de catálogo de veículos para vendedores independentes em Portugal, com design dark mode e gestão administrativa intuitiva.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
