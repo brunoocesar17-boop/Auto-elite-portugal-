@@ -14,8 +14,11 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     transmission: Transmission.AUTOMATICA,
     engineSize: '1.3',
     color: 'Cinza Montanha Magno',
-    description: 'Veículo em estado irrepreensível. Pack AMG completo, teto panorâmico e sistema MBUX de última geração.',
-    images: ['https://picsum.photos/seed/a250/1200/800', 'https://picsum.photos/seed/a250int/1200/800'],
+    description: 'Veículo em estado irrepreensível. Pack AMG completo, teto panorâmico e sistema MBUX de última geração com realidade aumentada.',
+    images: [
+      'https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1200'
+    ],
     isFeatured: true,
     createdAt: Date.now() - 1000 * 60 * 60 * 24 * 2,
     sellerPhone: '912345678'
@@ -32,48 +35,38 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     transmission: Transmission.AUTOMATICA,
     engineSize: '3.0',
     color: 'Preto Carbono',
-    description: 'SUV de luxo com performance superior. Histórico completo na marca. Muitos extras.',
-    images: ['https://picsum.photos/seed/x5/1200/800', 'https://picsum.photos/seed/x5int/1200/800'],
+    description: 'SUV de luxo com performance superior. Histórico completo na marca. Muitos extras, incluindo suspensão pneumática e faróis Laser.',
+    images: [
+      'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200'
+    ],
     isFeatured: true,
     createdAt: Date.now() - 1000 * 60 * 60 * 24 * 5,
     sellerPhone: '912345678'
   },
   {
     id: '3',
-    brand: 'Audi',
-    model: 'A4 Avant 35 TDI',
-    year: 2022,
-    price: 38900,
-    km: 28000,
-    fuel: FuelType.DIESEL,
-    bodyType: CarBodyType.CARRINHA,
-    transmission: Transmission.AUTOMATICA,
-    engineSize: '2.0',
-    color: 'Branco Glaciar',
-    description: 'Carrinha familiar versátil e económica. Equipamento de topo e design intemporal.',
-    images: ['https://picsum.photos/seed/a4/1200/800', 'https://picsum.photos/seed/a4int/1200/800'],
-    isFeatured: false,
-    createdAt: Date.now() - 1000 * 60 * 60 * 24 * 1,
-    sellerPhone: '912345678'
-  },
-  {
-    id: '4',
-    brand: 'Renault',
-    model: 'Clio E-Tech Full Hybrid',
+    brand: 'Porsche',
+    model: 'Taycan Turbo S',
     year: 2023,
-    price: 24500,
-    km: 8000,
-    fuel: FuelType.HIBRIDO,
-    bodyType: CarBodyType.HATCHBACK,
+    price: 185000,
+    km: 5000,
+    fuel: FuelType.ELETRICO,
+    bodyType: CarBodyType.SEDAN,
     transmission: Transmission.AUTOMATICA,
-    engineSize: '1.6',
-    color: 'Laranja Valência',
-    description: 'Excelente para cidade. Consumos baixos e tecnologia híbrida eficiente.',
-    images: ['https://picsum.photos/seed/clio/1200/800', 'https://picsum.photos/seed/clioint/1200/800'],
-    isFeatured: false,
-    createdAt: Date.now() - 1000 * 60 * 60 * 24 * 3,
+    engineSize: 'EV',
+    color: 'Azul Gentian',
+    description: 'O pináculo da mobilidade elétrica. Performance avassaladora com todo o conforto de um sedan de luxo. Garantia Porsche Approved.',
+    images: [
+      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200'
+    ],
+    isFeatured: true,
+    createdAt: Date.now() - 1000 * 60 * 60 * 24 * 1,
     sellerPhone: '912345678'
   }
 ];
 
-export const BRAND_LIST = ['Mercedes-Benz', 'BMW', 'Audi', 'Renault', 'Peugeot', 'Volkswagen', 'Tesla', 'Porsche', 'Volvo', 'Land Rover'];
+export const BRAND_LIST = [
+  'Mercedes-Benz', 'BMW', 'Audi', 'Porsche', 'Tesla', 'Land Rover', 'Volvo', 'Jaguar', 'Volkswagen', 'Renault', 'Peugeot'
+];
